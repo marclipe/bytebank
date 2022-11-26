@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: 'nova-transferencia.component.html',
   styleUrls: ['nova-transferencia.component.scss'],
 })
-export class NovaTransferencia {}
+export class NovaTransferencia {
+  valor: number  = 0; 
+  destino: number = 0;
+
+  transferir() {
+    console.log('Solicitada nova transferência');
+    console.log('Valor: ', this.valor)
+    console.log('Destino: ', this.destino)
+  }
+}
