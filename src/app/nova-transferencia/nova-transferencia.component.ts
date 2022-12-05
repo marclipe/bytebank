@@ -9,8 +9,8 @@ export class NovaTransferencia {
 
   @Output() aoTransferir = new EventEmitter<any>();
 
-  valor: number  = 0; 
-  destino: number = 0;
+  valor: number; 
+  destino: number;
 
   transferir() {
     console.log('Solicitada nova transferência');
